@@ -1,86 +1,92 @@
-#root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada&display=swap");
+
 
 body {
     margin: 0;
+    padding: 0;
+}
+.img-container {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
 }
 
-nav {
-    text-align: center;
-    font-family: Verdana;
-    background-color: rgb(10, 10, 50);
-    color: white;
-    font-size: 24px;
-    padding: 0 16px;
-    margin-bottom: 16px;
+body {
+    background-color: #ff6969;
 }
 
 h1 {
-    margin: 16px;
-    cursor: default;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 3rem;
 }
 
 canvas {
     min-height: 464px;
     max-width: 992px;
     margin: 0 auto;
+    background-color: white;
 }
 
 .duration {
-    max-width: 992px;
-    width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 0 16px;
-    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 button {
-    color: white;
-    background-color: rgb(10, 10, 50);
-    margin-bottom: 8px;
-    padding: 8px;
-    min-width: 40px; 
-    cursor: pointer;
-    outline: none;
-}
-
-button:hover {
-    background-color: rgb(40, 40, 80);
-}
-
-img {
-    border-radius: 150px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;  
-    border: 4px rgba(0,0,0,0) solid;
-    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 .candidates {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     max-width: 992px;
-    margin: auto auto;
+    margin: 0 auto;
 }
-
 .candidate-container {
-    margin-bottom: 8px;
-    text-align: center;
-    font-family: Verdana;
-    font-weight: 600;
-    cursor: pointer;
-    color: rgb(10, 10, 50);
+    width: 80px;
+    padding: 40px;
 }
 
-.candidate-container:hover img {
-    border: 4px rgb(10, 10, 50) solid;
+.candidate-container img {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;  
+}
+
+img {
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(54, 54, 59);
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.candidate-container:nth-child(1) {
+    background-color: rgb(41, 91, 255);
+}
+
+.candidate-container:nth-child(2) {
+    background-color: rgb(85, 200, 255);
+}
+.candidate-container:nth-child(3) {
+    background-color: rgb(125, 40, 230);
+}
+.candidate-container:nth-child(4) {
+    background-color: rgb(67, 98, 165);
+}
+.candidate-container:nth-child(5) {
+    background-color: rgb(0, 130, 120);
 }

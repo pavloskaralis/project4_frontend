@@ -1,5 +1,7 @@
 # project4_frontend
 
+# project4_frontend
+
 Summary: 
 
 The front end consists of a single functional react component which utilizes useEffect and useState hooks to store and control data; the code is written to dynamically render an unknown amount of candidates and polling data onto a Chart.js canvas. 

@@ -38,7 +38,7 @@ function App() {
     storeData(data)
     
     //dynamic month filter
-    const months = Object.keys(data[0]).filter(key => ['id','img','name','created_at','updated_at'].indexOf(key) === -1);
+    const months = Object.keys(data[0]).filter(key => ['id','image','name','created_at','updated_at'].indexOf(key) === -1);
     //pass months to state for dynamic render
     storeMonthButtons(['all',...months]);
     //passed to Chart datasets property
@@ -132,9 +132,8 @@ function App() {
   return (
     <>
       <nav>
-        <h1>2019 Democratic Polling Averages</h1>
+        <h1>2020 Democratic Polling Averages</h1>
       </nav>
-      
       <canvas id="chart" ></canvas>
       <div className='duration'>
         {monthButtons.map(button => {
@@ -144,7 +143,7 @@ function App() {
               if((month === 'all' && button !== 'all') || (month !== 'all' && button === 'all'))toggleTypeChange(true);
               updateMonth(button);
             }}>{button.charAt(0).toUpperCase() + button.slice(1)}</button>
-            )
+          )
         })}
       </div>
       <div className='candidates'>
@@ -153,7 +152,7 @@ function App() {
             <div key={candidate.name} className='candidate-container' onClick={()=> {
               updateCandidates(()=>updatedCandidates(candidate.name));
             }}>
-              <img className='image'key={candidate.name} src={candidate.img} />
+              <img className='image'key={candidate.name} src={candidate.image} />
               <div className='name'>{candidate.name}</div>
             </div>
           )

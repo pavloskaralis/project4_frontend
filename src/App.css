@@ -50,6 +50,10 @@ button {
     outline: none;
 }
 
+button:hover {
+    background-color: rgb(40, 40, 80);
+}
+
 img {
     border-radius: 150px;
     width: 100px;
@@ -74,8 +78,9 @@ img {
     font-family: Verdana;
     font-weight: 600;
     cursor: pointer;
+    color: rgb(10, 10, 50);
 }
 
 .candidate-container:hover img {
-    border: 4px rgb(150, 0, 0) solid;
+    border: 4px rgb(10, 10, 50) solid;
 }

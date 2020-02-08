@@ -2,7 +2,7 @@
 
 Summary: 
 
-The front end consists of a single functional react component which utilizes useEffect and useState hooks to store and control data; the code is written to dynamically render an unknown amount of candidates and polling data onto a Chart.js canvas. 
+The front end consists of a functional react thatwhich utilizes useEffect and useState hooks to store and control data; the code is written to dynamically render an unknown amount of candidates and polling data onto a Chart.js canvas. 
 
 Control Flow: 
 
@@ -20,11 +20,11 @@ Next, the function evaluates the amount of polling data (by month), and passes t
 
 With all the data fully available and quantified, the Chart.js object can be populated and passed to the createChart function.
 
-Conclusively, when a user selects a candidate or polling month, the above data flow is retrigged, though this time down a different path.
+Conclusively, when a user selects a candidate or polling month, the above data flow is retrigged, though this time down a slightly different path.
 
 The getData function now relies on the state's data property to fetch all information, before passing to it to the prepareData function.
 
-Because this transfer occurs outside of an axios request, a promise is utilized to resolve prepareData before it passes its results to the updateChart function (instead of createChart).
+Because this transfer occurs outside of an axios request, a promise is utilized to resolve prepareData before it passes its results to the updateChart function, instead of createChart.
 
-Within updateChart, either chart.update() or chart.destroy() is called to update the canvas, depending on a conditional that checks whether the chart type (bar or line) has changed. 
+Within updateChart, either chart.update() or chart.destroy() is called to change the canvas, depending on a conditional that checks whether the chart type (bar or line) has changed. 
 

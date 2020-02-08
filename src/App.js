@@ -13,7 +13,7 @@ function App() {
 
   const getData = () => {
     if(data.length === 0) {
-      axios.get('http://polls-project-backend.herokuapp.com/candidates')
+      axios.get('https://polls-project-backend.herokuapp.com/candidates')
       .then(({data}) => prepareData(data))
       .then(chartData => createChart(chartData))
     } else {
